@@ -1,0 +1,262 @@
+body{
+  background-color: white;
+}
+
+/* Code général utilisé par tous les composants enfant d'App.js */
+
+.mainContainer{
+  background-color: white;
+  overflow-y: scroll;
+  width: 100%;
+  height: 70.9vh;
+}
+.mainContainer::-webkit-scrollbar {
+  display: none;    /* Cache la barre de défilement */
+}
+
+/* Fin du code général utilisé par tous les composants enfant d'App.js */
+
+/* Conception de la Navbar */
+nav{
+  background-color: white;
+  border-bottom: rgba(0, 0, 0, 0.1) 1px solid;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+}
+.containerOnglet_Logo{
+  /* background: green; */
+  width: 150px;
+  height: 4.6vh;
+  padding: 5px;
+  margin-top: 4px;
+  margin-left: 12%;
+
+}
+.containerOnglet_Logo > img{
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+.containerOnglet_Nav{
+  /* background-color: aqua; */
+  width: 55%;
+  margin-left: 5%;
+}
+
+.containerOnglet_Nav > ul{
+  /* background-color: purple; */
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  height: 5.8vh;
+  font-weight: bolder;
+  font-size: 12px;
+  margin-top: 4px;
+  padding: 0;
+}
+.containerOnglet_Nav > ul li{
+  margin-top: 2%;
+  cursor: pointer;
+}
+.userIcon_nav{
+  width: 20px;
+  height: 20px;
+  margin-top: -20%;
+}
+.cartIcon_nav{
+  width: 20px;
+  height: 20px;
+  margin-top: -20%;
+}
+.containerOnglet_deroulant{
+  position: absolute;
+  background-color: white;
+  border: solid 0.1px rgba(0, 0, 0, 0.1);
+  margin-top: 4%;
+  margin-left: 30%;
+  width: 18%;
+  height: 18vh;
+  z-index: 2;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.containerOnglet_deroulant > ul{
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  display: grid;
+  gap: 18%;
+}
+.containerOnglet_deroulant > ul li{
+  margin-left: 10%;
+  font-size: 14px;
+  color: black;
+}
+
+/* Fin de la conception de la Navbar */
+
+/* Partie du code utilisé pour l'effet hover */
+
+.custom-link {
+  text-decoration: none !important; /* Retire l'effet souligné */
+  color: black; /* Utilise la couleur de texte par défaut du parent */
+}
+.containerOnglet_deroulant.visible {
+  opacity: 1; /* Rendre l'élément visible progressivement */
+  visibility: visible; /* Rendre l'élément visible immédiatement */
+}
+
+/* Fin de la partie du code utilisé pour l'effet hover */
+
+
+/* Le footer */
+
+footer{
+background-color: black;
+width: 100%;
+color: white;
+height: 22vh;
+display: flex;
+justify-content: space-between;
+}
+.containerReseaux{
+/* background-color: red; */
+width: 30%;
+}
+.containerReseaux_droit{
+  /* background-color: green; */
+  margin-top: 18%;
+}
+.containerReseaux_droit > p{
+  font-size: 13px;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+}
+.containerReseaux_icons{
+  /* background-color: bisque; */
+  width: 35%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7%;
+  cursor: pointer;
+}
+.instaIcon_Footer{
+  width: 20px;
+  height: 20px;
+}
+.tiktokIcon_Footer{
+  width: 20px;
+  height: 20px;
+}
+.mailIcon_Footer{
+  width: 27px;
+  height: 27px;
+  margin-top: -3%;
+}
+.containerReseaux_légal{
+  /* background-color: aquamarine; */
+  width: 30%;
+  height: 15vh;
+  display: grid;
+  margin-top: 2%;
+}
+.containerReseaux_légal > p{
+  font-size: 13px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* FIn du footer */
+
+
+
+
+/* Code commun à tous les composants Zone en noire */
+
+.blackPart{
+  background-color: black;
+  width: 100%;
+  height: 34vh;
+}
+.blackPart_livraison{
+  /* background: red; */
+  text-align: center;
+  padding-top: 2%;
+  position: relative;
+}
+.blackPart_livraison > img{
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  margin-left: -2.2%;
+  z-index: 1;
+}
+.blackPart_livraison > label{
+  color: white;
+}
+.blackPart_Advance{
+  color: white;
+  /* background: green; */
+  margin-top: 10%;
+  width: 50%;
+  margin-left: 7%;
+}
+.blackPart_Advance > h2{
+  font-size: 50px;
+  position: relative;
+}
+.blackPart_Advance > h2:before{
+  content: 'À partir de 149€';
+  color: white;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -5px;
+  font-size: 13px;
+}
+.whitePart{
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.whitePart_firstContainer{
+  /* background: orange; */
+  margin-left: 65%;
+  padding-right: 2%;
+  width: 13%;
+  height: 3vh;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.whitePart_firstContainer > img{
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+}
+.whitePart_centerContainer{
+  background: black;
+  width: 1px;
+  height: 2vh;
+  margin-top: 1.3%;
+}
+.whitePart_secondContainer{
+  /* background: brown; */
+  padding-left: 2%;
+  height: 3vh;
+  margin-top: 12px;
+  width: 13%;
+  display: flex;
+  justify-content: space-between;
+}
+.whitePart_secondContainer > img{
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+}
+
+/* Fin du code commun à tous les composants Zone en noire */

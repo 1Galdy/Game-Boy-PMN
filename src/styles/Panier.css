@@ -1,0 +1,138 @@
+.containerFacture{
+    background: orangered;
+    width: 100%;
+    height: 220vh;
+    display: flex;
+}
+.containerFacture_whitePart{
+    background: white;
+    width: 60%;
+    height: 100%;
+}
+.containerFacture_whitePart > h2{
+    margin-left: 17%;
+    margin-top: 10%;
+}
+.containerFacture_whitePart > p{
+    /* background: green; */
+    width: 70%;
+    margin-left: 17%;
+    font-size: 13px;
+    color: gray;
+}
+.infos_Facture{
+    background: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1), -3px -3px 10px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 10px;
+    padding: 3% 3%;
+    margin-left: 17%;
+    width: 70%;
+    height: 60%;
+    margin-top: 5%;
+}
+.infosFacture_colonne{
+    border-top: lightgray 1px solid;
+    border-bottom: lightgray 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+.infosFacture_colonneGauche{
+    /* background: red; */
+    width: 40%;
+}
+.infosFacture_colonneGauche > ul, .infosFacture_colonneDroite > ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.infosFacture_colonneDroite{
+    /* background: red; */
+    width: 40%;
+}
+.Noborder{
+    border-top: none;
+    border-bottom: none;
+}
+.delete-icon{
+    width: 25px;
+    height: 25px;
+    margin-left: -90%;
+    cursor: pointer;
+}
+.left{
+    margin-left: 1%;
+}
+.right{
+    margin-right: -1%;
+}
+.width{
+    width: 58%;
+    /* background: blue !important; */
+}
+.fiche_configuration{
+    /* background: brown; */
+    width: 100%;
+    height: 81.5%;
+    border-bottom: lightgray 1px solid;
+    margin-top: 5%;
+}
+.config_section{
+    /* background: skyblue; */
+    width: 30%;
+    height: 100%;
+    margin-left: 25%;
+}
+.config_section > label{
+    /* background: green; */
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+    width: 78%;
+}
+.nonDes_config{
+    font-size: 14px;
+}
+.nonDes_config > span{
+    margin-left: 14%;
+    color: lightgray;
+}
+.margin-top{
+    margin-top: 22%;
+}
+.borderTop{
+    border-bottom: none;
+    margin-top: 5%;
+}
+.linkDelete_facture{
+    cursor: pointer;
+}
+.containerFacture_grayPart{
+    background: rgb(240, 240, 240);
+    width: 40%;
+    height: 100%;
+}
+.containerReduction_code > input[type="text"]{
+    border-radius: 20px 0px 0px 20px;
+    padding: 2%;
+    border: lightgray solid 1px;
+}
+.buttonReduction_code{
+    border-radius: 0px 20px 20px 0px;
+    border: skyblue solid 1px;
+    background: skyblue;
+    color: white;
+    font-weight: bolder;
+    margin-left: -31%;
+    cursor: pointer;
+}
+.buttonDelete_panier{
+    border: lightgray solid 1px;
+    border-radius: 20px;
+    padding: 4% 10% 4% 20%;
+    background-image: url('../../public/assets/icons/delete-icon.png');
+    background-repeat: no-repeat;
+    background-position: 12% 50%;
+    font-weight: bolder;
+    cursor: pointer;
+}

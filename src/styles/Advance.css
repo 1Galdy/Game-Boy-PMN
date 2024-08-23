@@ -1,0 +1,6 @@
+.No_before:before{
+    content: none !important;
+}
+.No_whitePart{
+    display: none;
+}
